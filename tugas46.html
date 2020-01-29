@@ -9,9 +9,19 @@
     <button type="button" name="button" onclick="myFunction()">Ubah warna</button>
     <script type="text/javascript">
       function myFunction() {
+        var yellow = document.body.style.background = "yellow";
+        var red = document.body.style.background = "red";
+        var green = document.body.style.background = "green";
+
         var rubah = prompt("Ketikan Warna Yang Kamu Inginkan (english)");
-        if (rubah != null) {
+        if (rubah === yellow) {
           document.body.style.background = "yellow";
+        }
+        else if (rubah === red) {
+          document.body.style.background = "red";
+        }
+        else if (rubah === green) {
+          document.body.style.background = "green";
         }
       }
     </script>
